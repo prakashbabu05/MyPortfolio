@@ -153,6 +153,16 @@ section { padding: 115px 0; }
 .service-number { color: var(--accent-dark); font-family: "DM Mono", monospace; font-size: .75rem; }
 .service p { color: var(--muted); font-size: .84rem; }
 
+.profiles { background: var(--surface); }
+.profile-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.profile-link { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px; padding: 23px 25px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.profile-link:hover { border-color: var(--accent-dark); box-shadow: 0 12px 25px rgba(23,37,31,.08); transform: translateY(-4px); }
+.profile-link-number { color: var(--accent-dark); font-family: "DM Mono", monospace; font-size: .72rem; }
+.profile-link strong, .profile-link small { display: block; }
+.profile-link strong { font-size: 1.1rem; }
+.profile-link small { margin-top: 3px; color: var(--muted); font-size: .76rem; }
+.profile-link-arrow { font-size: 1.2rem; }
+
 .contact { padding-bottom: 80px; }
 .contact-box { display: grid; grid-template-columns: 1fr .8fr; gap: 70px; padding: 55px; border-radius: var(--radius); background: var(--accent); }
 .contact-box p { max-width: 440px; color: #4e5d35; }
@@ -172,7 +182,7 @@ footer { padding: 25px 0 35px; color: var(--muted); font-family: "DM Mono", mono
     .about-grid, .contact-box { grid-template-columns: 1fr; gap: 38px; }
     .section-heading { display: block; margin-bottom: 35px; }
     .section-heading p { margin-top: 20px; }
-    .project-grid { grid-template-columns: 1fr; }
+    .project-grid, .profile-links { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .service:nth-child(3) { padding-left: 0; border-left: 0; }
     .contact-box { padding: 35px 25px; }
