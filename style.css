@@ -127,7 +127,7 @@ section { padding: 115px 0; }
 .profile-card small { color: #aaa6a5; }
 
 .projects, .profiles { background: rgba(22, 21, 24, .42); }
-.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.project-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .project-card { overflow: hidden; border-radius: var(--radius); transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
 .project-card:hover { border-color: rgba(103,245,208,.6); transform: translateY(-8px) rotate(.3deg); box-shadow: 0 22px 55px rgba(0,0,0,.3), 0 0 35px rgba(103,245,208,.08); }
 .project-art { position: relative; display: flex; align-items: flex-start; justify-content: space-between; min-height: 420px; padding: 20px; overflow: hidden; }
